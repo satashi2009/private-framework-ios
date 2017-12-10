@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/AssetExplorer.framework/AssetExplorer
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _AEAssetPackageSuppressionPrefix, _AECameraAssetPackageGeneratorErrorDomain,
+                          _AEDecorativeGradientShadowReuseIdentifier, _AEDecorativeGridOverlayReuseIdentifier,
+                          _AEDecorativeLoopReuseIdentifier, _AEDecorativeVideoReuseIdentifier,
+                          _AEExplorerViewControllerPackageTransportObserverContext,
+                          _AEExplorerViewControllerProgressViewModelObserverContext, _AEFullScreenContentWindowWillBecomeHidden,
+                          _AELocalizedString, _AEPHAssetPackagingErrorDomain,
+                          _AEProgressViewModelDataSourceManagerObserverContext, _AssetExplorerBundle,
+                          _AssetExplorerVersionNumber, _AssetExplorerVersionString, _PUPhotosGridDownloadHelperCancelledCode,
+                          _badgeGradientShadowSizeForGridCellSize, _contentElementBottomMargin, _contentElementTopMargin,
+                          _frameForOpenCameraButtonWithExplorerDimensions, _frameForOpenPhotoLibraryButtonWithExplorerDimensions,
+                          _frameForTinyCameraWithExplorerDimensions, _gridCellSizeForExplorerDimensions,
+                          _gridOriginForTinyCamera, _initialHorizontalOriginForExplorerDimensions,
+                          _interItemSpacingWithExplorerDimensions, _kAEAssetPackageDisplayCreationDate,
+                          _kAEAssetPackageDisplayDuration, _kAEAssetPackageDisplayHasPhotoColorAdjustments,
+                          _kAEAssetPackageDisplayImageMetadata, _kAEAssetPackageDisplayIsLivePhotoPlaceholder,
+                          _kAEAssetPackageDisplayLivePhotoStillDisplayTime, _kAEAssetPackageDisplayLivePhotoVideoDuration,
+                          _kAEAssetPackageDisplayMediaSubtypes, _kAEAssetPackageDisplayMediaType,
+                          _kAEAssetPackageDisplayModificationDate, _kAEAssetPackageDisplayPixelHeight,
+                          _kAEAssetPackageDisplayPixelWidth, _kAEAssetPackageDisplayPlaybackStyle,
+                          _kAEAssetPackageDisplayPlaybackVariation, _kAEAssetPackageMediaOrigin, _kUTTypeALAssetURL,
+                          _kUTTypeAdjustmentInfoForEditedImage, _kUTTypeAssetPreviewImage, _kUTTypeOriginalImageForEditedImage,
+                          _kUTTypeOriginalVideoForEditedImage, _kUTTypePFVideoAdjustmentsSlomoMetadata,
+                          _openButtonHeightAdjustment, _openButtonHorizonatalOffsetForExplorerDimensions,
+                          _openButtonVerticalOffsetForExplorerDimensions, _openButtonWidthAdjustment,
+                          _openButtonsSizeForExplorerDimensions, _originForTinyCameraWithExplorerDimensions ]
+    objc-classes:       [ _AEAssetPackage, _AEAssetPackageGenerator, _AECameraAssetPackageGenerator, _AECameraTile,
+                          _AECameraTileController, _AECameraTilePresentationContentView,
+                          _AECameraTilePresentationNavigationController, _AECameraTilePresentationViewController,
+                          _AEDecorativeTileSource, _AEDelegatingTileIdentifierConverter,
+                          _AEDelegatingTransitionAnimationCoordinator, _AEExplorerGroupingView, _AEExplorerViewController,
+                          _AEFullScreenWindow, _AEGenericViewTile, _AEGridOverlayConfiguration, _AEGridOverlayLayoutInfo,
+                          _AEGridOverlayView, _AEMutableAssetPackage, _AEPHAssetPackageGenerator, _AEPackageTransport,
+                          _AEPhotosAssetPackageGenerator, _AEProgressIndicatorView, _AEProgressViewModel,
+                          _AEProgressViewModelSnapshot, _AEReviewAssetProvider, _AERoundedCornerButton,
+                          _AESceneGroupedTilingLayout, _AESnapshotViewController, _AEWrappedAssetsDataSource,
+                          _AEWrappedDataSourceManager, _AEWrappedMediaProvider ]
+...

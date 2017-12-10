@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/FMF.framework/FMF
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _FMFDevicesChangedNotification, _FMFErrorDomain, _FMFGroupIdDefault, _FMFGroupIdGroup,
+                          _FMFGroupIdOneToOne, _FMFMeDeviceChangedNotification, _kFMFSyncXPCTimeout, _kMapImageKey ]
+    objc-classes:       [ _FMFAppAccountInfo, _FMFContactUtility, _FMFDevice, _FMFFriendshipRequest, _FMFHandle,
+                          _FMFLocation, _FMFMapImageRequest, _FMFMapSession, _FMFSession, _FMFSynchronizer ]
+...

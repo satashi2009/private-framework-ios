@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/NanoAppMonitor.framework/NanoAppMonitor
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _NAMPBAppReadFrom, _NAMPBCompanionMessageReadFrom, _NanoAppMonitorVersionNumber,
+                          _NanoAppMonitorVersionString, _nam_apps_log ]
+    objc-classes:       [ _NAMPBApp, _NAMPBCompanionMessage, _NanoAppDataProvider, _NanoAppMonitorDaemon,
+                          _NanoAppSyncService, _NanoAppUsage, _NanoAppUsageMonitor, _NanoAppUsageSync ]
+    objc-ivars:         [ _NAMPBApp._companionBundleID, _NAMPBApp._timeIntervalSinceReferenceDate, _NAMPBApp._watchBundleID,
+                          _NAMPBCompanionMessage._apps ]
+...

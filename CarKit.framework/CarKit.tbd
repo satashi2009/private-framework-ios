@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/CarKit.framework/CarKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CARAutomaticDNDEnabledPreference, _CARAutomaticDNDExitConfirmationDisabledNotification,
+                          _CARAutomaticDNDExitConfirmationEnabledNotification, _CARAutomaticDNDStatusChangedNotification,
+                          _CARAutomaticDNDTriggeringPreferenceChangedNotification, _CARDNDAutoReplyAudience,
+                          _CARDNDAutoReplyMessage, _CARDNDAutomaticTriggeringMethod, _CARDNDDisableTimerTimestamp,
+                          _CARDNDFirstBuddyDateFirstMoment, _CARDNDInternalAutoReplyWhitelist, _CARDNDMiniHasCompletedFirstRide,
+                          _CARDNDMiniHasStartedFirstRide, _CARDNDMiniInternalEnabled,
+                          _CARDNDMiniInternalExitConfirmationOverride, _CARDNDMiniInternalForceOverride,
+                          _CARDNDMiniInternalShowGeofencingAlerts, _CARDNDMiniInternalShowUserAlerts,
+                          _CARDNDMiniIsFirstBuddyPresentation, _CARDNDMiniNumberOfCompletedRides, _CARDNDMiniRecentRideHistory,
+                          _CARDNDMiniUserOptedOutInBuddy, _CARDNDTriggerPreferenceChangedTimestamp,
+                          _CARDNDUserHasAdjustedTriggerMethod, _CARInputDeviceFeedbackTypeKey,
+                          _CARInputDeviceSupportedFeedbackTypes, _CARInputDeviceUUID, _CARInputPerformFeedbackCommand,
+                          _CARLimitedUIValueUserInterfaceJapanMaps, _CARLimitedUIValueUserInterfaceMusicLists,
+                          _CARLimitedUIValueUserInterfaceNonMusicLists, _CARLimitedUIValueUserInterfaceSoftKeyboard,
+                          _CARLimitedUIValueUserInterfaceSoftPhoneKeypad, _CARMaximumRecentRides, _CARMaximumRidesForReminder,
+                          _CARSessionAuthenticationSucceededNotification,
+                          _CARSessionElectronicTollCollectionStateChangedNotification,
+                          _CARSessionLimitUserInterfacesChangedNotification, _CARSessionNightModeChangedNotification,
+                          _CARSessionOwnsTurnByTurnNavigationChangedNotification, _CARSessionPerformanceReportPostedNotification,
+                          _CARSessionScreenBecameAvailableNotification, _CARSessionScreenBecameUnavailableNotification,
+                          _CARSessionServerConnectionDiedNotification, _CARSessionStatusChangedNotification,
+                          _CARSesssionStatusChangedCallback, _CARUserTerminatedRideThreshold, _CRAggregateAddValueForScalarKey,
+                          _CRAggregateReconnectionEnableWiFiAcceptedKey, _CRAggregateReconnectionEnableWiFiDeclinedKey,
+                          _CRAggregateReconnectionFailureCountKey, _CRAggregateReconnectionSuccessCountKey,
+                          _CRAggregateSetValueForScalarKey, _CRAggregateVehicleCountKey, _CRAggregateWiredAcceptedKey,
+                          _CRAggregateWiredDeclinedKey, _CRAggregateWiredToWirelessAcceptedKey,
+                          _CRAggregateWiredToWirelessDeclinedKey, _CRAggregateWirelessAcceptedKey,
+                          _CRAggregateWirelessDeclinedKey, _CRAutomaticDNDLocationBundle,
+                          _CRAutomaticDNDLocationServicesEnabled, _CRAutomaticDNDLocationServicesStatus,
+                          _CRCarPlayAppPolicyChangedNotification, _CRDeviceSupportsAutomaticDNDMotionTrigger,
+                          _CRDeviceTypeIsiPhone, _CRFrameworkBundle, _CRIsAnyPairedVehicleAttached, _CRIsInternalInstall,
+                          _CRLocalizedStringForKey, _CRLocalizedWiFiVariantKeyForKey, _CRMapsLightLevelChangeNotification,
+                          _CRPairedVehiclesDidChangeNotification, _CRPreferencesAutomaticDNDDomain,
+                          _CRPreferencesNotMigratedDomain, _CRPreferencesSettingsDebugUIKey, _CRSaveScreenshotToTemporaryFile,
+                          _CRSessionStatusInCarNotificationCallback, _CRSettingsDebugUIEnabled,
+                          _CRVehicleInformationInteractionRestrictionsChangedNotification,
+                          _CRVehicleInformationVehicleAmbientBrightnessChangedNotification, _CarGeneralLogging,
+                          _CarKitVersionNumber, _CarKitVersionString ]
+    objc-classes:       [ _CARAutomaticDNDStatus, _CARDNDUtility, _CARInputDevice, _CARInputDeviceManager,
+                          _CARInputDeviceTouchpad, _CARManufacturerIcon, _CARSession, _CARSessionChangedNotificationConverter,
+                          _CARSessionConfiguration, _CARSessionScreenBorrowToken, _CARSessionStatus,
+                          _CARSessionTurnByTurnToken, _CRCarKitServiceClient, _CRCarPlayAppBlacklist,
+                          _CRCarPlayAppDeclaration, _CRCarPlayAppPolicy, _CRCarPlayAppPolicyEvaluator, _CRCarPlayPreferences,
+                          _CRPairedVehicleManager, _CRUsageInformation, _CRVehicle, _CRVehicleAccessory,
+                          _CRVehicleAccessoryManager, _CRVehicleInformation, _CRVehiclePolicyMonitor ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _SignpostSerializationErrorDomain, _SignpostSupportDeserializationEnumerateObjectArrayFromData,
+                          _SignpostSupportVersionNumber, _SignpostSupportVersionString,
+                          __SignpostSerializeableObjectFromSerializedObjectDictionary,
+                          __SignpostSupportSerializationDataFromObjectArray, __machToNano, __signpost_debug_log,
+                          _kSignpostSupportMachTimeTranslator_UnknownTime ]
+    objc-classes:       [ _SignpostAnimationInterval, _SignpostEvent, _SignpostInterval, _SignpostIntervalBuilder,
+                          _SignpostNotificationEvent, _SignpostObject, _SignpostSupportCompositorInterval,
+                          _SignpostSupportLogMessage, _SignpostSupportMachTimeTranslationRange,
+                          _SignpostSupportMachTimeTranslator, _SignpostSupportObject, _SignpostSupportObjectExtractor,
+                          _SignpostSupportObjectFilter, _SignpostSupportSerializabledObjectCollection,
+                          _SignpostSupportSubsystemCategoryBlacklist, _SignpostSupportSubsystemCategoryFilter,
+                          _SignpostSupportSubsystemCategoryFilterEntry, _SignpostSupportSubsystemCategoryWhitelist ]
+...

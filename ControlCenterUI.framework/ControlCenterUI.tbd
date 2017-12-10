@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/ControlCenterUI.framework/ControlCenterUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CCUILayoutPointZero, _CCUILayoutPointsEqual, _CCUILayoutRectEqual, _CCUILayoutRectUnknown,
+                          _CCUILayoutRectZero, _CCUILayoutSizeEqual, _CCUILayoutSizeUnknown, _CCUILayoutSizeZero,
+                          _CCUIMakeLayoutSizeFromDictionary, _ControlCenterUIVersionNumber, _ControlCenterUIVersionString,
+                          _kCCUILayoutPointObjCType, _kCCUILayoutRectObjCType, _kCCUILayoutSizeObjCType ]
+    objc-classes:       [ _CCUIContentModuleBackgroundView, _CCUIContentModuleContainerTransition,
+                          _CCUIContentModuleContainerView, _CCUIContentModuleContainerViewController,
+                          _CCUIContentModuleContentContainerView, _CCUIControlCenterDefaults,
+                          _CCUIControlCenterPositionProvider, _CCUIControlCenterPositionProviderPackingRule,
+                          _CCUIDismissalGestureRecognizer, _CCUIExpandedModuleBackgroundView, _CCUIFlickGestureRecognizer,
+                          _CCUIHeaderPocketView, _CCUILayoutOptions, _CCUILayoutView, _CCUIModularControlCenterCardView,
+                          _CCUIModularControlCenterCardViewController, _CCUIModularControlCenterOverlayViewController,
+                          _CCUIModularControlCenterViewController, _CCUIModuleCollectionView,
+                          _CCUIModuleCollectionViewController, _CCUIModuleInstance, _CCUIModuleInstanceManager,
+                          _CCUIModuleSettings, _CCUIModuleSettingsManager, _CCUIMutableLayoutOptions, _CCUIScrollView,
+                          _CCUIStatusLabel, _CCUIStatusLabelViewController, _CCUIStatusUpdateQueue ]
+    objc-ivars:         [ _CCUILayoutOptions._itemEdgeSize, _CCUILayoutOptions._itemSpacing ]
+...

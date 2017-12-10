@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _TLKDefaultVerticalPadding, _TLKMinimumImageSpacing, _TLKMinimumTextSpacing, _TLKStyleIsDark,
+                          _TemplateKitVersionNumber, _TemplateKitVersionString, _concurrentQueue, _severalTrailingColumns ]
+    objc-classes:       [ _TLKActivityIndicatorView, _TLKAuxilliaryTextView, _TLKContentsContainerView, _TLKContentsView,
+                          _TLKDescriptionView, _TLKDetailsSection, _TLKDetailsView, _TLKEmojiableVibrantLabel,
+                          _TLKEnlargedTitleView, _TLKFontUtilities, _TLKFormattedText, _TLKFormattedTextItem,
+                          _TLKGridLayoutManager, _TLKGridRowView, _TLKHeaderView, _TLKIcon, _TLKIconsView, _TLKImage,
+                          _TLKImageItem, _TLKImageView, _TLKImagesView, _TLKInlineImage, _TLKInlineRoundedText,
+                          _TLKKeyValueGridView, _TLKKeyValueTuple, _TLKKeyValueView, _TLKLabelItem, _TLKLayoutUtilities,
+                          _TLKManyTrailingGridLayoutManager, _TLKMediaInfoView, _TLKMessageView, _TLKMultilineText,
+                          _TLKNumericalResultView, _TLKObject, _TLKObserver, _TLKRichText, _TLKRichTextField,
+                          _TLKRoundedCornerLabel, _TLKRoundedCornerLabels, _TLKSectionHeaderView, _TLKSelectableGridButton,
+                          _TLKSelectableGridTuple, _TLKSelectableGridView, _TLKSimpleRowView, _TLKSplitHeaderView,
+                          _TLKStackView, _TLKStars, _TLKStarsView, _TLKTableColumnAlignment, _TLKTableHeaderRow,
+                          _TLKTableRow, _TLKTextAreaView, _TLKTitleContainerView, _TLKUtilities, _TLKVibrantLabel,
+                          _TLKVibrantView, _TLKView ]
+...

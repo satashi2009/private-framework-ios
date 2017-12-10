@@ -1,0 +1,67 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CSAudioLogDirectory, _CSFidesBorealisTriggerTypeAsString, _CSHasAOP,
+                          _CSInternalPreferencesSynchronize, _CSIsBridgeOS, _CSIsEmbedded, _CSIsHorseman, _CSIsIOS,
+                          _CSIsIPhone, _CSIsInternalBuild, _CSIsMac, _CSIsOSX, _CSIsSimulator, _CSIsTV, _CSIsWatch,
+                          _CSLogContextFacilityCoreSpeech, _CSLogDirectory, _CSLogInitIfNeeded, _CSLoggingSubsystem,
+                          _CSMakeTimestampedAudioLogFilenameWithPrefixAndSuffix, _CSNotBackedupInternalPreferencesSynchronize,
+                          _CSSystemRootDirectory, _VTUI_AVAudioSessionPortBorealisInput,
+                          __CSNotBackedupPreferencesSetValueForKey, __CSNotBackedupPreferencesValueForKey,
+                          __CSPreferencesSetValueForKey, __CSPreferencesValueForKey,
+                          __ZN16LDLDecomposition9decomposeERKNSt3__16vectorIfNS0_9allocatorIfEEEE, __ZN16LDLDecompositionC1Ev,
+                          __ZN16LDLDecompositionC2Ev, __ZN18BatchBeepCanceller10beepComingEj,
+                          __ZN18BatchBeepCanceller10initializeERKNSt3__16vectorIfNS0_9allocatorIfEEEEPKcRKjSA_SA_SA_SA_SA_RKf,
+                          __ZN18BatchBeepCanceller13doBatchCancelEj, __ZN18BatchBeepCanceller13resetBeepInfoEi,
+                          __ZN18BatchBeepCanceller14recordBeepInfoEi, __ZN18BatchBeepCanceller16storeReportPart1Ej,
+                          __ZN18BatchBeepCanceller16storeReportPart2Ej, __ZN18BatchBeepCanceller22updateCrossCorrelationEjj,
+                          __ZN18BatchBeepCanceller23proportionAbsAboveBoundERKNSt3__16vectorIfNS0_9allocatorIfEEEEfjj,
+                          __ZN18BatchBeepCanceller24findCrossCorrelationPeakEjj,
+                          __ZN18BatchBeepCanceller3rmsERKNSt3__16vectorIfNS0_9allocatorIfEEEEj,
+                          __ZN18BatchBeepCanceller3rmsERKNSt3__16vectorIfNS0_9allocatorIfEEEEjj,
+                          __ZN18BatchBeepCanceller4feedEPKsjPS1_, __ZN18BatchBeepCanceller5resetEv,
+                          __ZN18BatchBeepCanceller6maxabsERKNSt3__16vectorIfNS0_9allocatorIfEEEEjj,
+                          __ZN18BatchBeepCanceller8convolveERNSt3__16vectorIfNS0_9allocatorIfEEEERKS4_S7_,
+                          __ZN18BatchBeepCanceller9feedFloatEPKfjPS1_, __ZN18BatchBeepCanceller9updateLDLERKjPKc,
+                          __ZN18BatchBeepCancellerC1Ev, __ZN18BatchBeepCancellerC2Ev,
+                          __ZNK16LDLDecomposition15wholeSquareRootEj,
+                          __ZNK16LDLDecomposition9ldl_solveERKNSt3__16vectorIfNS0_9allocatorIfEEEERS4_,
+                          __ZNK18BatchBeepCanceller12lastBeepInfoEP14_batchbeepinfo, __buffer, __queue, __sampleRate,
+                          _countZeroCrossings, _createFloatArray, _fftEnergies, _hammingWindow, _kCSAssetFootprintKey,
+                          _kCSAssetLanguageKey, _kCSAssetPremiumKey, _kCSAssetValueLanguageAny,
+                          _kCSInitialContinousZerosMetricKey, _kCSLoggingContextFramework, _kCSMaxContinousZerosMetricKey,
+                          _kCSMidSegmentContinousZerosMetricKey, _kCSNotBackedupPreferencesDomain, _kCSPreferencesDomain,
+                          _kCSZeroRunLengthMetricKey, _kCSZeroRunStartingSampleMetricKey, _setup, _snrSetup, _snrWindow,
+                          _sumsegment, _vecsqrt, _zeroCrossingVAD ]
+    objc-classes:       [ _CSAsset, _CSAssetManager, _CSAssetManagerEnablePolicy, _CSAudioChunk, _CSAudioCircularBuffer,
+                          _CSAudioConverter, _CSAudioFileLog, _CSAudioFileWriter, _CSAudioRecorder,
+                          _CSAudioSampleRateConverter, _CSAudioZeroFilter, _CSBeepCanceller, _CSConfig,
+                          _CSContinuousVoiceTrigger, _CSCoreSpeechServices, _CSEndpointerMetrics, _CSEndpointerProxy,
+                          _CSEventMonitor, _CSFirstUnlockMonitor, _CSHybridEndpointAnalyzer, _CSKeywordAnalyzerNDAPI,
+                          _CSKeywordAnalyzerQuasar, _CSKeywordDetector, _CSLanguageCodeUpdateMonitor, _CSMyriadPHash,
+                          _CSNovDetector, _CSNovDetectorResult, _CSPolicy, _CSPreferences, _CSSelfTriggerDetector,
+                          _CSServerEndpointFeatures, _CSSpeakerDetectorNDAPI, _CSSpeakerModel, _CSSpeechController,
+                          _CSSpeechEndpointAssetMetaUpdateMonitor, _CSSpeechManager, _CSSpringboardStartMonitor,
+                          _CSStateMachine, _CSUtils, _CSVAD2EndpointAnalyzer, _CSVTUIASRGrammars, _CSVTUIAudioSessionAVVC,
+                          _CSVTUIKeywordDetector, _CSVTUIRegularExpressionMatcher, _CSVTUITrainingManager,
+                          _CSVTUITrainingSession, _CSVTUITrainingSessionWithPayload, _CSVoiceTriggerAssetMetaUpdateMonitor,
+                          _CSVoiceTriggerEnabledMonitor, _CSVoiceTriggerEnabledPolicyNonAOP, _CSVoiceTriggerEventNotifier,
+                          _CSVoiceTriggerFidesClient, _CSVoiceTriggerFileLogger, _CSVoiceTriggerFirstPass,
+                          _CSVoiceTriggerSecondPass, _CSVoiceTriggerSpeakerTrainer ]
+    objc-ivars:         [ _CSVTUITrainingSession._ASRErrorOccured, _CSVTUITrainingSession._audioSession,
+                          _CSVTUITrainingSession._keywordDetector, _CSVTUITrainingSession._locale,
+                          _CSVTUITrainingSession._masterTimer, _CSVTUITrainingSession._pcmBufArray,
+                          _CSVTUITrainingSession._queue, _CSVTUITrainingSession._resultReported,
+                          _CSVTUITrainingSession._sessionDelegate, _CSVTUITrainingSession._sessionNumber,
+                          _CSVTUITrainingSession._sessionProcess, _CSVTUITrainingSession._sessionSuspended,
+                          _CSVTUITrainingSession._speechRecognitionRequest, _CSVTUITrainingSession._speechRecognitionTask,
+                          _CSVTUITrainingSession._speechRecognizer, _CSVTUITrainingSession._status,
+                          _CSVTUITrainingSession._trainingCompletion, _CSVTUITrainingSession._utteranceId ]
+...

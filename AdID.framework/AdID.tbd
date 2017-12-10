@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/AdID.framework/AdID
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _AdIDVersionNumber, _AdIDVersionString ]
+    objc-classes:       [ _ADAdTrackingSchedulingManager, _ADClientDPIDManager, _ADIDManagerService, _ADJingleOptOutRequest,
+                          _ADJingleRequest, _ADJingleRequestManager, _ADJingleSegmentRequest, _ADLATStatusManager,
+                          _ADOptInStatusService, _ADSegmentDataManager ]
+...

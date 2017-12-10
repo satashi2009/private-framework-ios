@@ -1,0 +1,51 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/WatchListKitUI.framework/WatchListKitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _WLKUIAccessOptionsAccountKey, _WLKUIAccessOptionsBodyKey, _WLKUIAccessOptionsFooterKey,
+                          _WLKUIAccessOptionsShouldDenyOnCancelKey, _WLKUIAccessOptionsSuppressWelcomeVideoAddOnOptIn,
+                          _WLKUIAccessOptionsTitleKey, _WLKUIAccountChannelsInterfaceName, _WLKUIAppInstallOptionsBodyKey,
+                          _WLKUIAppInstallOptionsContentTitleKey, _WLKUIAppInstallOptionsContentTypeKey,
+                          _WLKUIAppInstallOptionsContentTypeMovie, _WLKUIAppInstallOptionsContentTypeTVShow,
+                          _WLKUIAppInstallOptionsInstallButtonKey, _WLKUIAppInstallOptionsShowAppStoreLink,
+                          _WLKUIAppInstallOptionsTitleKey, _WLKUIAppInstallOptionsUpdateBodyKey,
+                          _WLKUIAppInstallOptionsUpdateTitleKey, _WLKUIAppLibraryInterfaceName, _WLKUIMediaPlayerName,
+                          _WLKUINetworkInterfaceName, _WLKUINotificationsInterfaceName, _WLKUINotificationsKeyAppearance,
+                          _WLKUINotificationsKeyBody, _WLKUINotificationsKeyButtonType, _WLKUINotificationsKeyIdentifier,
+                          _WLKUINotificationsKeySound, _WLKUINotificationsKeyTimeout, _WLKUINotificationsKeyTitle,
+                          _WLKUINotificationsKeyUserInfo, _WLKUINotificationsOnAction, _WLKUINotificationsOnActionKeyReason,
+                          _WLKUINotificationsOnActionKeyReasonActivation, _WLKUINotificationsOnActionKeyReasonDeclinedByUser,
+                          _WLKUINotificationsOnActionKeyReasonDisabled, _WLKUINotificationsOnActionKeyReasonFailedToPresent,
+                          _WLKUINotificationsOnActionKeyReasonInterrupted, _WLKUINotificationsOnActionKeyReasonSystemEvent,
+                          _WLKUINotificationsOnActionKeyReasonTimedOut, _WLKUINotificationsSoundDefaultValue,
+                          _WLKUIOnboardingInterfaceName, _WLKUISettingsInterfaceName, _WLKUISharingInterfaceName,
+                          _WatchListKitUIVersionNumber, _WatchListKitUIVersionString ]
+    objc-classes:       [ _SBIconProgressView, _WLKModalTextPresenter, _WLKUIAccessViewController, _WLKUIAccessView_iOS,
+                          _WLKUIAccessView_tvOS, _WLKUIAccountChannels, _WLKUIAppCell, _WLKUIAppInstallerViewController,
+                          _WLKUIAppLibraryInterface, _WLKUIAppsGridViewController, _WLKUIDirectScrollCollectionView,
+                          _WLKUIFontFactory, _WLKUIImageService, _WLKUILoadingViewController, _WLKUIMediaPlayer,
+                          _WLKUIMediaPlayerImageLoader, _WLKUINetworkInterface, _WLKUINotificationCenter,
+                          _WLKUINotificationsImpl_iOS, _WLKUIOnboardingController, _WLKUIOnboardingInterface,
+                          _WLKUIOrderedItemsMap, _WLKUIQueryDataSource, _WLKUISettingsInterface, _WLKUISharingInterface,
+                          _WLKUISpinnerView, _WLKUIViewFactory, __SBIconProgressFractionTransition,
+                          __SBIconProgressLoadingNoneStateTransition, __SBIconProgressNoneWaitingStateTransition,
+                          __SBIconProgressPausedTransition, __SBIconProgressTransition,
+                          __SBIconProgressWaitingLoadingStateTransition, __SBInstallProgressStateTransition,
+                          __WLKUIAccessViewController, __WLKUIAppInstallConfirmationView,
+                          __WLKUIAppInstallConfirmationViewController, __WLKUIAppInstallLockup, __WLKUIAppInstallView,
+                          __WLKUIMediaPlayerImageLoaderConfiguration, __WLKUIMediaPlayerImageLoaderOperationSet,
+                          __WLKUITextBadge ]
+    objc-ivars:         [ __SBInstallProgressStateTransition._fraction, __SBInstallProgressStateTransition._fromState,
+                          __SBInstallProgressStateTransition._toState, __WLKUIAccessViewController._accessView,
+                          __WLKUIAccessViewController._appChannels, __WLKUIAccessViewController._appInfos,
+                          __WLKUIAccessViewController._bundleIDs, __WLKUIAccessViewController._hasCalledCompletion,
+                          __WLKUIAccessViewController._hasOptedIn, __WLKUIAccessViewController._loadingView,
+                          __WLKUIAccessViewController._options, __WLKUIAccessViewController._shouldDenyOnCancel,
+                          __WLKUIAccessViewController._suppressWelcomeVideoAddOnOptIn ]
+...

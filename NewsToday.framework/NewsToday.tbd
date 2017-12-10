@@ -1,0 +1,68 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/NewsToday.framework/NewsToday
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _FCConsumedArticleFilterMethodForReadArticlesFilterMethod,
+                          _FCConsumedArticleFilterMethodForSeenArticlesFilterMethod,
+                          _FCFeedPersonalizingArticleHalfLifeScoreWithMillisecondDate, _FCPersonalizationActionForIndex,
+                          _FCPersonalizationActionIndex, _FCPersonalizationActionIndexToAction, _FCPersonalizationActionToIndex,
+                          _FRDebugAggregateWithJSONDictionary, _FRDebugJSONDictionaryFromAggregate, _FRDebugJSONForAggregate,
+                          _FRHashForAggregate, _FRPPTRequiredDataForFRPPTType, _FRPPTTypeForNSString, _FRPPTTypes,
+                          _FRPPTTypesStringMap, _FRPersonalizationAggregateAggregatesForFeatures,
+                          _FRPersonalizationAggregateBaselineAggregateWithConfigurableValues,
+                          _FRPersonalizationAggregateDefaultBaselineAggregateWithConfigurableValues,
+                          _FRPersonalizationAggregateImpressionBiasForAction, _FRPersonalizationArticleGlobalScores,
+                          _FRPersonalizationArticleScores, _FRPersonalizationArticleScoresPreTigris,
+                          _FRPersonalizationArticleUserFeedbackScore, _FRPersonalizationBaselineClicksMultiplerForTagID,
+                          _FRPersonalizationCohortMemberships, _FRPersonalizationCtrToMembership, _FRPersonalizationCurveMapper,
+                          _FRPersonalizationLog, _FRPersonalizationRealTimeUserFeedbackCoefficient,
+                          _FRPersonalizationSubscriptionVotesForFeatures, _FRPersonalizationTimeDecay,
+                          _FRPersonalizationUtilitiesStaticHourlyFlowRate, _FRTabTypeForIndex, _FRTabTypeForNSString,
+                          _FRTabTypeIndex, _FRTabTypeStringMap, _FRTabTypes, _NNCreateHeadlineSyncableHeadline,
+                          _NNHeadlineSyncableResultFromHeadline, _NNHeadlineSyncableResultFromResult,
+                          _NNHeadlineSyncableSectionFromSection, _NNSetupCompanionSyncLog, _NSStringFromFRPPTType,
+                          _NSStringFromFRTabType, _NTArticleIDsRequestWithArticles, _NTAssetFileURL, _NTAssetFileURLWithData,
+                          _NTAssetFileURLWithFile, _NTDeleteOnDiskAssetsAsync,
+                          _NTDesiredHeadlineFieldAssetOptionsWithAssetSizes, _NTDesiredHeadlineFieldOptionsWithAssetOptions,
+                          _NTHeadlineAdElementFromFCHeadline, _NTHeadlineAnalyticsElementFromFCHeadline,
+                          _NTHeadlineFromFCHeadline, _NTHeadlineSourceNameImageHeightFromNameImageSizePreset,
+                          _NTHeadlineSourceNameImageMaskAssetHandleFromFCHeadline, _NTHeadlineThumbnailFromFCHeadline,
+                          _NTHeadlineThumbnailLengthFromThumbnailSizePreset, _NTHeadlinesFromFCHeadlines,
+                          _NTInflateAssetsIntoResults, _NTIsUserInExperiment, _NTNewsSourceIdentifier,
+                          _NTParsecSourceIdentifier, _NTSectionCanShowLeadingCell, _NTSectionFeedItemsLimit,
+                          _NTSectionSlotsUsedFromFeedItemsUsed, _NTSharedLog, _NTShouldUseParsecResults,
+                          _NTSimulateCrashWithError, _NTUnknownSourceIdentifier, _NTXPCSuitableError, _NewsTodayVersionNumber,
+                          _NewsTodayVersionString, _kFRInterestRecordingPostfix, _kFRPersonalizationAggregateBaselineIdentifier,
+                          _kFRPersonalizationLogType ]
+    objc-classes:       [ _FRBaselineFeature, _FRFeatureResult, _FRGroupTypeFeature, _FRHeadlineFeatureArticleTypeFlint,
+                          _FRHeadlineFeatureArticleTypeNonFlint, _FRHeadlineFeatureArticleWithVideoContent,
+                          _FRPersonalizationFeature, _FRPersonalizationFeatureBundle, _FRPersonalizationFeatureResult,
+                          _FRPersonalizationUtilities, _FRPublisherPremiumFeature, _FRPublisherTopicFeature,
+                          _FRPublisherVideoContentFeature, _FRReadonlyPersonalizationAggregateStore, _FRRingBuffer,
+                          _FRTagIDFeature, _FRTodayWidgetSectionIDFeature, _NTArticleIDsSectionFetchDescriptor,
+                          _NTArticleListSectionFetchDescriptor, _NTCatchUpOperation, _NTCatchUpOperationArticleIDsRequest,
+                          _NTCatchUpOperationForYouRequest, _NTCatchUpOperationResults, _NTFeedPersonalizer,
+                          _NTFeedTransformationIncrementalPersonalizedDiversifiedLimit, _NTForYouSectionFetchDescriptor,
+                          _NTHeadline, _NTHeadlineAggregationResult, _NTHeadlinePersonalizationMetadata,
+                          _NTHeadlineResultOperation, _NTHeadlineResults, _NTHeadlineResultsSource, _NTNetworkEventTracker,
+                          _NTNewsHeadlineResultOperation, _NTNewsHeadlineResultsExplicitAllocationAggregator,
+                          _NTNewsHeadlineResultsFetchDescriptor, _NTNewsHeadlineResultsSourceFetchHelper,
+                          _NTNewsHeadlineResultsSourceFetchHelperSectionDescriptor, _NTNewsSourceAvailabilityEntry,
+                          _NTParsecHeadlineResultOperation, _NTParsecHeadlineResultsFetchDescriptor,
+                          _NTParsecSourceAvailabilityEntry, _NTParsecZKWNewsOperation,
+                          _NTPersonalizationFeatureCTRLookupOperation, _NTPersonalizationFeatureCTRLookupRequest,
+                          _NTPersonalizedSectionFetchDescriptor, _NTPersonalizedSectionLimitTransformation,
+                          _NTPersonalizedSectionSortTransformation, _NTQueueConfigSectionQueueDescriptor,
+                          _NTReadablePrivateDataStorage, _NTSection, _NTSectionConfigSectionDescriptor,
+                          _NTSectionFeedFilterTransformation, _NTSectionPresencePersonalizationAbsoluteRequest,
+                          _NTSectionPresencePersonalizationOperation, _NTSectionPresencePersonalizationRelativeRequest,
+                          _NTSourceAvailabilityManager, _NTTodayContext, _NTTrendingByParsecResults,
+                          _NTTrendingByParsecResultsOperation, _NTTrendingByParsecSectionFetchDescriptor,
+                          _NTWritablePrivateDataStorage ]
+...

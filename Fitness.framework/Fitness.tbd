@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/Fitness.framework/Fitness
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _FIAgeInYearsForDateOfBirth, _FIAgeInYearsForDateOfBirthWithCurrentDateAndCalendar,
+                          _FICMotionConditionForWheelchairUse, _FIDefaultDayLength, _FIMonthlyChallengeAchievementNamePrefix,
+                          _FIMonthlyChallengeBadgeNameSuffixFromIdentifier, _FITypicalDayActivityModelDaysOfActivityHistory,
+                          _FITypicalDayActivityModelTodayActivityDidChangeNotification, _UnitForGoalType ]
+    objc-classes:       [ _FIActivitySettingsController, _FISimpleHistogram, _FITypicalDayActivityModel ]
+...

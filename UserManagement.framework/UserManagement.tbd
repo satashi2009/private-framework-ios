@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _UMErrorPasscodeBackOffInterval, _UMUserManagerErrorDomain, _UserManagementVersionNumber,
+                          _UserManagementVersionString, __ADClientPushValueForDistributionKey ]
+    objc-classes:       [ _UMAbort, _UMError, _UMLog, _UMLogMessage, _UMMobileKeyBag, _UMMutableUser, _UMQueue,
+                          _UMTask, _UMUser, _UMUserManager, _UMUserSwitchBlockingTask, _UMUserSwitchContext,
+                          _UMUserSyncTask, _UMXPCServer ]
+...

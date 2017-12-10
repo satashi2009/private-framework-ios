@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/ScreenshotServices.framework/ScreenshotServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _SSAlertServiceViewControllerClassName, _SSApplyDebuggingCustomizationsToViewIfAppropriate,
+                          _SSRemoteViewControllerDebuggingIsEnabled,
+                          _SSScreenshotsDisplayModeDidChangeToFullscreenNotificationName,
+                          _SSScreenshotsDisplayModeDidChangeToPictureInPictureNotificationName,
+                          _SSScreenshotsDisplayModeWillChangeToFullscreenNotificationName,
+                          _SSScreenshotsDisplayModeWillChangeToPictureInPictureNotificationName, _SSServiceBundleIdentifier,
+                          _SSServiceViewControllerClassName, _ScreenshotServicesVersionNumber, _ScreenshotServicesVersionString,
+                          __SSIsAnnotationKitEnabled, __SSIsObfuscationToolEnabled, __SSIsRemoteViewControllerDebuggingEnabled,
+                          __SSIsScreenshotManagerDebuggingEnabled, __SSIsViewSnapshotDebuggingEnabled, __SSObfuscationToolSize,
+                          __SSShouldHomeButtonDismiss, __SSUserDefaults, __SSUserDefaultsBooleanForKeyWithNODefault,
+                          __SSUserDefaultsCGFloatForKeyWith0Default ]
+    objc-classes:       [ _SSActiveInterfaceOrientationObserver, _SSDittoHostViewController, _SSDittoRemoteConnection,
+                          _SSEnvironmentDescription, _SSEnvironmentElement, _SSImageIdentifierAction,
+                          _SSImageIdentifierUpdate, _SSMainScreenSnapshotter, _SSOtherScreenSnapshotter,
+                          _SSRemoteAlertHandleProvider, _SSScreenCaptureAbilityCheck, _SSScreenCapturer,
+                          _SSScreenCapturerPresentationOptions, _SSScreenSnapshot, _SSScreenSnapshotter, _SSScreenshotAction,
+                          _SSScreenshotAssetManager, _SSScreenshotAssetManagerPhotoLibraryBackend, _SSScreenshotsWindow,
+                          _SSScreenshotsWindowRootViewController, _SSSnapshotter, __SSScreenCaptureResults ]
+...

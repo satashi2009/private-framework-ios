@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/Haptics.framework/Haptics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _HAButtonHapticParameterAudioPreSilenceKey, _HAButtonHapticParameterHapticPreSilenceKey,
+                          _HAButtonHapticParameterPostSilenceKey, _HAButtonHapticsLoaderServiceIsAvailableNotification,
+                          _HPHapticEventTypeHapticPeriodic, _HPHapticEventTypeHapticTransient,
+                          _HPHapticParameterIDHapticDuration, _HPHapticParameterIDHapticFullness,
+                          _HPHapticParameterIDHapticIntensity, _HPHapticParameterIDHapticSharpness, _HapticsVersionNumber,
+                          _HapticsVersionString ]
+    objc-classes:       [ _HAButtonHapticsLoader, _HPHapticDynamicParameter, _HPHapticEngine, _HPHapticEvent,
+                          _HPHapticFixedParameter, _HPHapticPattern ]
+...

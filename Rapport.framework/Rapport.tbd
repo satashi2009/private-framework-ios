@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _RPDestinationIdentifierActiveWatch, _RPDestinationIdentifierPersonalCompanion,
+                          _RPDestinationIdentifierSameHome, _RPDestinationIdentifierSameRoom,
+                          _RPDestinationIdentifierStereoCounterpart, _RPDeviceRoleSolo, _RPDeviceRoleStereoLeft,
+                          _RPDeviceRoleStereoRight, _RPServiceTypeMobileDevice, _RPServiceTypeNearbyAction,
+                          _RPServiceTypeNearbyInfo, _RPServiceTypeProximityPairing, _RPServiceTypeSystem,
+                          _RPServiceTypeWACAirPlay, _RPServiceTypeWACGeneric ]
+    objc-classes:       [ _RPClient, _RPCompanionLinkClient, _RPCompanionLinkConnection, _RPCompanionLinkDaemon,
+                          _RPCompanionLinkDevice, _RPCompanionLinkTransaction, _RPDevice, _RPDeviceDiscovery,
+                          _RPFileTransferInfo, _RPFileTransferMonitor, _RPFileTransferSession, _RPProfileService,
+                          _RPProfileSession, _RPRangingMeasurement, _RPRangingSession, _RPService, _RPSession,
+                          _RPSystemService, _RPSystemSession ]
+    objc-ivars:         [ _RPProfileService._dispatchQueue, _RPProfileSession._dispatchQueue, _RPProfileSession._peerDevice,
+                          _RPProfileSession._session ]
+...

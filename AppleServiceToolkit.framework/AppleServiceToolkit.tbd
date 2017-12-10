@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/AppleServiceToolkit.framework/AppleServiceToolkit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _ASTActionKey, _ASTAllowCellularDataKey, _ASTCustomServerKey, _ASTDomain, _ASTErrorDomain,
+                          _ASTGZIPEnabledKey, _ASTImageNameKey, _ASTLogHandleForCategory, _ASTPropertyItemsKey,
+                          _ASTRelaxTimeoutsKey, _ASTServerKey, _ASTServerLoggingKey, _ASTStrongDeviceIdentityKey,
+                          _ASTSuiteNameKey, _ASTTestAutomationKey, _ASTTestSuiteCompleteAction, _ASTTestSuiteImageAction,
+                          _ASTTestSuiteStartingAction, _ASTUseChunkedTransferEncodingKey, _ASTViewTitleKey,
+                          _AppleServiceToolkitVersionNumber, _AppleServiceToolkitVersionString,
+                          _kASTAlwaysAllowCellularSizeThreshold, _kASTHostEntitlement ]
+    objc-classes:       [ _ASTAssetConnection, _ASTAuthInfoConnection, _ASTAuthInfoResult, _ASTAutomatedSession,
+                          _ASTClientStatusConnection, _ASTConnectionManager, _ASTConnectionUtilities, _ASTEncodingUtilities,
+                          _ASTEnrollConnection, _ASTEnvironment, _ASTErrorStatus, _ASTFileManagement,
+                          _ASTFileUploadConnection, _ASTIdentity, _ASTLocalization, _ASTNetworkObject, _ASTNetworking,
+                          _ASTProfileConnection, _ASTProfileResult, _ASTRequest, _ASTResponse, _ASTSealableFile,
+                          _ASTSealablePayload, _ASTSendPropertiesErrorStatus, _ASTSession, _ASTSessionExistsConnection,
+                          _ASTTestAttributes, _ASTTestAutomation, _ASTTestResult, _ASTTestResultsConnection ]
+...

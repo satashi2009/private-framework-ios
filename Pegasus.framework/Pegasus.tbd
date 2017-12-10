@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/Pegasus.framework/Pegasus
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _PGActivateApplicationWithProcessIdentifier, _PGBundle, _PGBundleIdentifierForProcessIdentifier,
+                          _PGIsPictureInPictureSupported, _PGLocalizedString, _PGLocalizedStringFromTable, _PGLogCommon,
+                          _PGMachServiceName, _PGPegasusErrorDomain, _PGPictureInPictureExportedInterface,
+                          _PGPictureInPictureProxyPictureInPictureActiveChangedNotification,
+                          _PGPictureInPictureRemoteObjectInterface, _PGSizeIsEmpty, _PGSizeIsInvalid, _PGSizeIsValid,
+                          _PGSizeIsZero, _PGWaitForNotificationWithTimeout, _PG_dispatch_async_with_timeout,
+                          __PGLogMethodProem ]
+    objc-classes:       [ _PGBackdropView, _PGChevronView, _PGHostedWindow, _PGHostedWindowHostingHandle, _PGLayerHostView,
+                          _PGLoadingIndicatorView, _PGPictureInPictureApplication, _PGPictureInPictureController,
+                          _PGPictureInPictureControlsViewController, _PGPictureInPictureProxy, _PGPictureInPictureRemoteObject,
+                          _PGPictureInPictureViewController, _PGPlaybackProgress, _PGPlaybackProgressIndicator,
+                          _PGSetterThrottler, _PGStashedView, __PGBundle, __PGPictureInPictureConnectionExportedObject,
+                          __PGPlaybackProgressIndicatorRangesView, ___PGButton, ___PGView ]
+...

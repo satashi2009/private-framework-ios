@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore
+current-version:       68.2.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _DOCApplicationWithBundleIdentifierSupportsDocuments, _DOCContentTypeIsKindOfContentTypes,
+                          _DOCContentTypeQueryStringForFileTypes, _DOCContentTypesInDocumentTypes,
+                          _DOCContentTypesReadableByApplicationWithBundleIdentifier, _DOCDefaultFetchedAttributes,
+                          _DOCEscapedStringForSearchQuery, _DOCFileProviderEnumerationPropertiesUserInfoKeyExcludedFileTypes,
+                          _DOCFileProviderEnumerationPropertiesUserInfoKeyMaximumNumberOfItems,
+                          _DOCFileProviderEnumerationPropertiesUserInfoKeyTagIdentifiers,
+                          _DOCFileProviderEnumerationPropertiesUserInfoKeyTargetApplicationIdentifier,
+                          _DOCFileProviderOriginatedItemsQueryStringFragment, _DOCGetDefaultUserTags, _DOCInitLogging,
+                          _DOCIsTrashedQueryStringFragment, _DOCRecencyQualifyingAttributes,
+                          _DOCRecentActivitiesQueryStringForBundleIdentifier, _DOCRecentDocumentsQueryStringForTypes,
+                          _DOCSelfTaskHasBooleanEntitlement, _DOCShouldApplicationShowRecentsPopover, _DOCTagFromFPTag,
+                          _DOCTagRegistryChangeDiscoveredTagsDidChangeKey, _DOCTagRegistryChangeUserTagsDidChangeKey,
+                          _DOCTagRegistryLocalStorageDidChangeNotification, _DOCTagRegistryTagsDidChangeNotification,
+                          _DOCTagsFromFPTags, _DocumentManagerCoreVersionNumber, _DocumentManagerCoreVersionString,
+                          _FPTagFromDOCTag, _FPTagsFromDOCTags, __DOCAllowedFileProviderBundleIdentifiers,
+                          _dataOwnerBundleForItem, _dataOwnerBundleForProvider, _dataOwnerBundleForSearchableItem,
+                          _docLogHandle, _docPickerLogHandle, _docSourceLogHandle, _docUILogHandle, _kDOCItemCountUnset,
+                          _kFinderTagsDictKey, _kFinderTagsKey, _kFinderTagsSerialNumberKey, _kFinderTagsVersionKey ]
+    objc-classes:       [ _DOCConfiguration, _DOCManagedPermission, _DOCTag, _DOCTagLocalStorage, _DOCTagRegistry,
+                          _DOCTagRegistryICloudDataSource ]
+...

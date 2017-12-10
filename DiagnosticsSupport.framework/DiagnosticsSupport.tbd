@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/DiagnosticsSupport.framework/DiagnosticsSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _DALogFileName, _DAMobileLogPath, _DARootLogPath, _DSArchiveClose, _DSArchiveOpen,
+                          _DSArchiveWrite, _DSHexErrorDomain, _DiagnosticLogHandleForCategory,
+                          _DiagnosticsSupportVersionNumber, _DiagnosticsSupportVersionString, __buttonHIDEventFilterCallback,
+                          _kDADefaultBufferSize, _kDADefaultStringEncoding, _kDALineBreak, _kDSArchiveErrorDomain,
+                          _kDSCallStatsEntitlement, _kDSCapabilitiesResultKey, _kDSConnectionIDResultkey,
+                          _kDSDockTypeResultKey, _kDSFirmwareRevisionResultKey, _kDSHardwareButtonEntitlement,
+                          _kDSHardwareRevisionResultKey, _kDSIODeviceApplePencil, _kDSIODeviceSmartBatteryCase,
+                          _kDSIODeviceSmartKeyboard10_5inch, _kDSIODeviceSmartKeyboard12_9inch,
+                          _kDSIODeviceSmartKeyboard9_7inch, _kDSMACAddressResultKey, _kDSModelNumberResultKey,
+                          _kDSNameResultKey, _kDSSerialNumberResultKey ]
+    objc-classes:       [ _DSArchivePath, _DSCallStatisticsAggregator, _DSDateFormatter, _DSEADevice,
+                          _DSEntitlementUtilities, _DSGeneralLogCollector, _DSGeneralLogFile, _DSHardwareButtonEventHandler,
+                          _DSHardwareButtonEventMonitor, _DSIOHIDDevice, _DSIOPSDevice, _DSLogLine, _DSMutableArchive,
+                          _DSRemoteViewController, _DSResponder, _DSShapeView, _DSTestAutomation, _DSTextFile,
+                          _DSThermalLogLine, _DSUsageLogLine ]
+...

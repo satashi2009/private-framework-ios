@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/ProactiveExperts.framework/ProactiveExperts
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _PEXCollapseWhitespaceAndStrip, _PEXKeysToFetchNames, _PEXKeysToFetchPeople,
+                          _PEXMachTimeToNanoseconds, _ProactiveExpertsVersionNumber, _ProactiveExpertsVersionString,
+                          __kPEXMetricsConnectionsConsumerMaps, __kPEXMetricsConnectionsConsumerQuickType,
+                          __kPEXMetricsConnectionsConsumerSpotlight, __kPEXMetricsConnectionsConsumerSpringBoard,
+                          __kPEXMetricsConnectionsFeatureId, __kPEXMetricsConnectionsNAValue,
+                          __kPEXMetricsConnectionsSourceAppDonation, __kPEXMetricsConnectionsSourceCalendar,
+                          __kPEXMetricsConnectionsSourceKey, __kPEXMetricsConnectionsSourcePasteboard,
+                          __kPEXMetricsConnectionsSourceSchemaOrg, __kPEXMetricsConnectionsSourceSiri,
+                          __kPEXMetricsConnectionsTriggerLinguisticAddress, __kPEXMetricsConnectionsTriggerLinguisticLocation,
+                          __kPEXMetricsConnectionsTriggerLinguisticPhone, __kPEXMetricsConnectionsTriggerSemantic,
+                          __kPEXMetricsConnectionsUnknownValue, __labelAndValueForContactFields, _cityNamesForContact,
+                          _isClassCLocked, _kPEXFeatureIdentifier, _kPEXFrameworkBundleIdentifier,
+                          _kPEXMetricsFrameworkContactsAutocomplete, _kPEXMetricsFrameworkContacts_AutocompleteDelegate,
+                          _kPEXMetricsFrameworkContacts_ContactsServant, _kPEXMetricsFrameworkContacts_DiscoverySuggester,
+                          _kPEXMetricsFrameworkContacts_PeopleSuggester, _kPEXMetricsFrameworkCoreDuet,
+                          _kPEXMetricsFrameworkCoreSuggestions, _kPEXMetricsFrameworkEventKit,
+                          _kPEXMetricsFrameworkGeoServicesNoData, _kPEXMetricsFrameworkGeoServicesTimeout,
+                          _kPEXMetricsFrameworkHealthKitAuth, _kPEXMetricsFrameworkHealthKitQuery,
+                          _kPEXMetricsFrameworkHealthKitTimeout, _kPEXMetricsFrameworkHealthKitValue,
+                          _kPEXMetricsFrameworkMapKit, _kPEXMetricsFrameworkPasteboard, _kPEXMetricsHasResultNo,
+                          _kPEXMetricsHasResultYes, _kPEXMetricsQueryTypeDetail, _kPEXMetricsQueryTypeIdentifier,
+                          _kPEXMetricsQueryTypeNamePrefix, _kPEXMetricsServantConnections, _kPEXMetricsServantContacts,
+                          _kPEXMetricsServantContactsMeCard, _kPEXMetricsServantEvents, _kPEXMetricsServantHealth,
+                          _kPEXMetricsServantNavigation, _kPEXMetricsServantPortrait, _kPEXMetricsServantUnknown,
+                          _newCNContactStore, _newEKEventStore, _newGEONavigationListener, _newSuggestionsContactService,
+                          _nextMidnight, _previousMidnight, _quickTypeItemsForContacts, _relatedNamesForContact,
+                          _removePhoneExtensionAndNonDigits, _runBlockWhenDeviceIsClassCUnlocked,
+                          _setContactStoreFactoryForTesting, _setEventStoreFactoryForTesting,
+                          _setGeoNavigationListenerFactoryForTesting, _setSuggestionsContactServiceFactoryForTesting,
+                          _sharedCNContactStore, _sharedEKEventStore, _sharedSuggestionsContactService,
+                          _streetNamesForContact ]
+    objc-classes:       [ _PEXAutocompleteContext, _PEXAutocompleteDelegate, _PEXBroker, _PEXCachedNameLookup,
+                          _PEXConnectionsAddressFormatter, _PEXConnectionsCalendarSource, _PEXConnectionsDuetSource,
+                          _PEXConnectionsExpertServant, _PEXConnectionsLocation, _PEXConnectionsLocationManager,
+                          _PEXConnectionsMetricsTracker, _PEXConnectionsParameters, _PEXConnectionsPasteboardSource,
+                          _PEXConnectionsSource, _PEXConnectionsUtils, _PEXContact, _PEXContactNameItem, _PEXContactScorer,
+                          _PEXContactSuggester, _PEXContactsExpertServant, _PEXCriteria, _PEXDataDetectors,
+                          _PEXDiscoverySuggester, _PEXEvent, _PEXEventCache, _PEXEventCacheEvictionManager,
+                          _PEXEventKitNotificationHandler, _PEXEventsExpertServant, _PEXExplanationQueue, _PEXFormatter,
+                          _PEXHealthServant, _PEXItem, _PEXLabelMatcher, _PEXLabelStrengthSets, _PEXLabeledValue,
+                          _PEXMergedNameItem, _PEXMetricsLogging, _PEXName, _PEXNameDelegate, _PEXNameItem,
+                          _PEXNameItemMerger, _PEXNameLoadingContext, _PEXNamedEntityItem, _PEXNavigationExpertServant,
+                          _PEXNotificationHandler, _PEXNotificationManager, _PEXPasteboardLocationItem, _PEXPeopleSuggester,
+                          _PEXPortraitServant, _PEXQuickTypeBroker, _PEXQuickTypeItem, _PEXServant, _PEXSettings,
+                          _PEXSettingsKVOObserver, _PEXSiriBroker, _PEXSiriNamedEntityBroker ]
+...

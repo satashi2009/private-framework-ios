@@ -1,0 +1,59 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _SearchDefaultVerticalPadding, _SearchMinimumImageSpacing, _SearchMinimumTextSpacing,
+                          _SearchUIAppIconImageDidChangeNotification, _SearchUICFBundleIdentifierKey,
+                          _SearchUICellWillBecomeVisibleNotification, _SearchUIContentSizeCategoryDidChangeNotification,
+                          _SearchUIDocumentsAppBundleIdentifier, _SearchUIEdgeInsetsZero,
+                          _SearchUINotificationCellSectionTypeKey, _SearchUINumberOfSectionsForReloadNotification,
+                          _SearchUIStyleIsDark, _SearchUIStyleIsVibrant, _SearchUITableDidFinishReloadData,
+                          _SearchUITableViewSectionCornerRadius, _SearchUIVersionNumber, _SearchUIVersionString,
+                          _kPreviewCornerRadius, _kSmallPreviewCornerRadius, _severalTrailingColumns, _tlkStyleForStyle ]
+    objc-classes:       [ _SearchUI, _SearchUIAccessoryViewController, _SearchUIActivityIndicatorCardSectionView,
+                          _SearchUIAppIconButton, _SearchUIAppIconImage, _SearchUIAppIconImageCache,
+                          _SearchUIAppIconPeekController, _SearchUIAppStoreButtonViewController,
+                          _SearchUIAudioPlaybackCardSectionView, _SearchUIAutoLayout, _SearchUIAuxiliaryTextViewController,
+                          _SearchUIAvatarImage, _SearchUIButtonsView, _SearchUICalendarIconImage,
+                          _SearchUICalendarPeekViewController, _SearchUICalendarStore, _SearchUICardSectionCreator,
+                          _SearchUICardSectionRowModel, _SearchUICardSectionTableCell, _SearchUICardSectionView,
+                          _SearchUICardViewController, _SearchUICenteredResultTableViewCell, _SearchUIChevronViewController,
+                          _SearchUICloudDocumentImage, _SearchUICombinedCardSectionTableCell,
+                          _SearchUIConfirmationHUDTransitionController, _SearchUIConfirmationHUDView,
+                          _SearchUIConfirmationHUDViewController, _SearchUIContactStore, _SearchUIContactViewController,
+                          _SearchUIContactsThumbnailView, _SearchUIContentAdvisoryView, _SearchUIDescriptionCardSectionView,
+                          _SearchUIDetailedRowCardSectionView, _SearchUIDragSource, _SearchUIDropTarget,
+                          _SearchUIFallbackPeekViewController, _SearchUIFirstTimeExperienceViewController,
+                          _SearchUIFlightCardSectionView, _SearchUIForceTouchGestureRecognizer,
+                          _SearchUIGradingFeedbackViewController, _SearchUIGridLayoutManager, _SearchUIGridRowModel,
+                          _SearchUIIconView, _SearchUIIconViewContainer, _SearchUIImage, _SearchUIImageView,
+                          _SearchUIImagesCardSectionView, _SearchUIInlineActionsViewController, _SearchUIInternalDragObject,
+                          _SearchUIKeyValueDataCardSectionView, _SearchUIKeyboardableTableViewController,
+                          _SearchUILocalMediaController, _SearchUIMapCardSectionView, _SearchUIMediaArtworkImage,
+                          _SearchUIMediaPlayerViewController, _SearchUIMessageCardSectionView,
+                          _SearchUIMovieCardSectionBuyButtonView, _SearchUIMovieCardSectionUpNextButtonView,
+                          _SearchUIMovieCardSectionView, _SearchUIMultiResultRowModel, _SearchUIMultiResultTableViewCell,
+                          _SearchUINowPlayingCardSectionView, _SearchUINowPlayingLabelContainer,
+                          _SearchUINowPlayingSingleMovieCard, _SearchUIPeekDelegate, _SearchUIPlayButton,
+                          _SearchUIPlayButtonContainer, _SearchUIPlayButtonViewController,
+                          _SearchUIPrivacyDetailsViewController, _SearchUIReplicatorView, _SearchUIResultTableViewController,
+                          _SearchUIResultViewController, _SearchUIRichTitleCardSectionView, _SearchUIRowCardSectionView,
+                          _SearchUISFImage, _SearchUIScoreSummaryCardSectionView, _SearchUISearchField,
+                          _SearchUISectionHeaderCardSectionView, _SearchUISelectableGridCardSectionView,
+                          _SearchUISelectableTextView, _SearchUISeparatorView, _SearchUISingleResultRowModel,
+                          _SearchUISingleResultTableViewCell, _SearchUISuggestionCardSectionTableCell,
+                          _SearchUISuggestionCardSectionView, _SearchUITLKConverters, _SearchUITLKImageConverter,
+                          _SearchUITLKMultilineTextConverter, _SearchUITableHeaderView, _SearchUITableModel,
+                          _SearchUITableRowCardView, _SearchUITableView, _SearchUITableViewCell, _SearchUITableViewController,
+                          _SearchUIThumbnailView, _SearchUITitleCardSectionView, _SearchUITrailerView,
+                          _SearchUITrailersCardSectionView, _SearchUITwitterCardSectionView, _SearchUIUtilities,
+                          _SearchUIVibrantLabel, _SearchUIVibrantView, _SearchUIVibrantWidthLimitedLabel,
+                          _SearchUIWebCardSectionView, _SearchUIWebClipIconImage, _SearchUIWidthLimitedImageView,
+                          _SearchUIWidthLimitedLabel, _SearchUIWidthLimitedStackView ]
+...

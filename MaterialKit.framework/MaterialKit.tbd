@@ -1,0 +1,42 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _MTLogSubsystem, _MTMainScreenScale, _MTMaterialSettingsForRecipe,
+                          _MTMeshTransformIdentityMeshForMesh, _MTOptimizedMeshTransformForZoom, _MTRegisterMaterialKitLogging,
+                          _MTUpdateMaterialSettingsFromArchive, _MaterialKitVersionNumber, _MaterialKitVersionString,
+                          _NCLogMaterials, _NSStringFromMTLumaDodgePillBackgroundLuminance, _NSStringFromMTLumaDodgePillStyle,
+                          _materialVersionIMP ]
+    objc-classes:       [ _MTColorDodgeStyling, _MTCompoundVibrantStyling, _MTFontProvider,
+                          _MTLargeTextPlatterHeaderContentViewLayoutManager, _MTLumaDodgePillSettings,
+                          _MTLumaDodgePillStyleSettings, _MTLumaDodgePillView, _MTMappedImageCache, _MTMaterialView,
+                          _MTPlatterCustomContentView, _MTPlatterHeaderContentView, _MTPlatterHeaderContentViewLayoutManager,
+                          _MTPlatterHeaderViewDateLabelFactory, _MTPlatterView, _MTPlusDStyling,
+                          _MTPreviewBackgroundMaterialSettings, _MTSystemLegacyLuminanceSettings, _MTSystemMaterialSettings,
+                          _MTSystemModuleMaterialSettings, _MTSystemPlatterMaterialSettings,
+                          _MTSystemWidgetPlatterMaterialSettings, _MTTitledPlatterView, _MTVibrantHighContrastStyling,
+                          _MTVibrantListTintDarkStyling, _MTVibrantModuleRuleOnLightStyling, _MTVibrantPrimaryDarkStyling,
+                          _MTVibrantPrimaryStyling, _MTVibrantRuleStyling, _MTVibrantSecondaryAlternateStyling,
+                          _MTVibrantSecondaryDarkStyling, _MTVibrantSecondaryStyling, _MTVibrantStyling,
+                          _MTVibrantStylingProvider, _MTVibrantWidgetPrimaryDarkStyling,
+                          _MTVibrantWidgetPrimaryHighlightDarkStyling, _MTVibrantWidgetPrimaryHighlightStyling,
+                          _MTVibrantWidgetPrimaryStyling, _MTVibrantWidgetQuaternaryDarkStyling,
+                          _MTVibrantWidgetQuaternaryStyling, _MTVibrantWidgetSecondaryDarkStyling,
+                          _MTVibrantWidgetSecondaryHighlightDarkStyling, _MTVibrantWidgetSecondaryHighlightStyling,
+                          _MTVibrantWidgetSecondaryStyling, _MTVibrantWidgetTertiaryDarkStyling,
+                          _MTVibrantWidgetTertiaryStyling, __MTBackdropView, __MTVibrantStylingModuleProvider,
+                          __MTVibrantStylingPlatterProvider, __MTVibrantStylingVibrancyEffect,
+                          __MTVibrantStylingWidgetPlatterProvider ]
+    objc-ivars:         [ _MTPlatterCustomContentView._ancestorPlatterView, _MTPlatterView._customContentView,
+                          _MTPlatterView._mainContainerView, _MTPlatterView._mainOverlayView, _MTPlatterView._options,
+                          _MTPlatterView._recipe, _MTPlatterView._shadowView, _MTTitledPlatterView._headerContainerView,
+                          _MTTitledPlatterView._headerContentView, _MTTitledPlatterView._headerOverlayView,
+                          _MTVibrantStyling._composedFilter, _MTVibrantStylingProvider._materialSettings,
+                          _MTVibrantStylingProvider._observers ]
+...

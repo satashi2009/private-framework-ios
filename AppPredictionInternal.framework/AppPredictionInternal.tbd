@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/AppPredictionInternal.framework/AppPredictionInternal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _APRRetrieveAprResultFromSharedMemory, _APRStoreAprResultInSharedMemory,
+                          _ATXPredictionReasonLocationTransportType, _ATXPredictionReasonLocationTransportTypeAutomobile,
+                          _ATXPredictionReasonLocationTransportTypeRide, _ATXPredictionReasonLocationTransportTypeTransit,
+                          _ATXUpdatePredictions, _ATXUpdatePredictionsClearOverrride, _ATXUpdatePredictionsOverrideHandler,
+                          _AWDProactiveAppPredictionAppLaunchSequenceReadFrom, _AppPredictionInternalVersionNumber,
+                          _AppPredictionInternalVersionString, __ATXAppPredictionExpertIdentifier,
+                          __ATXCopySqliteDatabaseClassC, __ATXCopySqliteDatabaseDataClassC, __ATXDECBackupNeedsRestoring,
+                          __ATXExtractFilesFromDECBackupArchiveIfExists, __ATXInitializeInOwnerProcess,
+                          __ATXInspectionInterface, __ATXRestoreBackupIfNecesssary, __ATXRestoreIsInProgress,
+                          __ATXScoreNotSet, __ATXWriteBackupFileAndMarker, _dayZeroScore, _freePredictionItems,
+                          _getDECAggregateKeys, _getDECAssets, _getDECTypes, _getFilenamesAndDataForBackup,
+                          _isEnterpriseApp, _kATXLastWidgetEngagementTimestampKey, _kBacklightActivityAppName,
+                          _kInspectionInterfaceMachServiceName, _kKnowledgeQueryTime, _kMaximumStorageTimeSeconds,
+                          _kSerializedTimestampKey, _maxDate, _newPredictionItem, _predictionConfidence,
+                          _recentWidgetFeedback, _secondsIn24Hours, _setInput, _setInputAge, _shouldPredictBundle,
+                          _siriExperience, _updateWidget ]
+    objc-classes:       [ _APRAppIntentMonitor, _APRAppPredictions, _APRAppPreferenceServer, _ATXApp2VecMapping,
+                          _ATXAppConnectionBundleIdFilter, _ATXAppPredictionBlacklist, _ATXAppPredictionFeedbackItem,
+                          _ATXAppPredictorFeedback, _ATXAppPreferenceBundleIdFilter, _ATXBBNotificationManager,
+                          _ATXBackgroundSaver, _ATXBundleIdFilter, _ATXDeviceStateMonitor, _ATXDirectionsSupportingApps,
+                          _ATXGenreData, _ATXGenreOverlayHistogram, _ATXHistogramBundleIdTable, _ATXHistogramData,
+                          _ATXIntentBundleIdFilter, _ATXLaunchServicesHelper, _ATXLocationAppCandidate,
+                          _ATXLocationAwareBundleIdFilter, _ATXMagicalMomentsSignals, _ATXMagicalMomentsUpdateMonitor,
+                          _ATXPassAllBundleIdFilter, _ATXPhoneWatchBundleIdCache, _ATXPhoneWatchBundleIdMapper, _ATXServer,
+                          _ATXSyncDelegate, _ATXSyncService, _ATXTimeUtil, _AWDProactiveAppPredictionAppLaunchSequence,
+                          __APRFeedback, __APRIntentEvent, __APRParzenHistogram, __APRParzenModel, __ATXAggregateLogger,
+                          __ATXAppDailyDose, __ATXAppDailyDoseCurrentStore, __ATXAppHistoricalAverageDose, __ATXAppIconState,
+                          __ATXAppInfo, __ATXAppInfoManager, __ATXAppInstallMonitor, __ATXAppLaunch,
+                          __ATXAppLaunchCategoricalHistogram, __ATXAppLaunchCategoricalHistogramWithPersistentBackup,
+                          __ATXAppLaunchHistogram, __ATXAppLaunchHistogramManager, __ATXAppLaunchHistogramWithPersistentBackup,
+                          __ATXAppLaunchLocation, __ATXAppLaunchMonitor, __ATXAppLaunchSequence,
+                          __ATXAppLaunchSequenceAWDTracker, __ATXAppLaunchSequenceManager, __ATXAppPredictor,
+                          __ATXAppPredictorJSONScoreLogger, __ATXBundleIdSet, __ATXCategoricalHistogram, __ATXDESRecord,
+                          __ATXDataStore, __ATXDataStoreMigrations, __ATXDuetHelper, __ATXFeedback, __ATXGlobals,
+                          __ATXIconLocation, __ATXInspectionClient, __ATXInspectionServer,
+                          __ATXInspectionServerPredictionScoreLogger, __ATXInternalInstallNotification,
+                          __ATXInternalNotification, __ATXInternalUninstallNotification, __ATXLocation,
+                          __ATXLocationManagerWrapper, __ATXMovingAverage, __ATXNeuralNetwork, __ATXNeuralNetworkBuilder,
+                          __ATXObjectLogger, __ATXPaths, __ATXPredictionModelDetails, __ATXRecentInstallCache,
+                          __ATXRecipeEvaluation, __ATXSASLogger, __ATXScoreInterpreter, __ATXScoreInterpreterCtx,
+                          __ATXScoreTypes, __ATXTimeHistogram ]
+    objc-ivars:         [ _AWDProactiveAppPredictionAppLaunchSequence._bundleids,
+                          _AWDProactiveAppPredictionAppLaunchSequence._has,
+                          _AWDProactiveAppPredictionAppLaunchSequence._timestamp, __ATXFeedback._baseAlpha,
+                          __ATXFeedback._baseBeta, __ATXFeedback._decayHalfLifeSeconds, __ATXFeedback._priorAlpha,
+                          __ATXFeedback._priorBeta, __ATXFeedback._priorMean, __ATXFeedback._store,
+                          __ATXFeedback._uninstallNotificationListener, __ATXScoreInterpreterCtx.inputScores,
+                          __ATXScoreInterpreterCtx.intentType, __ATXScoreInterpreterCtx.stack,
+                          __ATXScoreInterpreterCtx.stackLen, __ATXScoreInterpreterCtx.subscores ]
+...

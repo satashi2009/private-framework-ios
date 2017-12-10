@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/NanoMusicSync.framework/NanoMusicSync
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _NMSActiveAccountDidChangeNotification, _NMSMediaPinningContentsInvalidatedNotification,
+                          _NMSMediaSyncInfoDidUpdateNotification, _NMSMusicRecommendationArtworkDidUpdateNotification,
+                          _NMSMusicRecommendationsDidUpdateNotification, _NMSNotificationUserInfoKeyIsInProcessNotification,
+                          _NMSRecommendationHeavyRotationIdentifier, _NMSSubscriptionStatusDidChangeNotification,
+                          _NMSSyncManagerSyncStateDidChangeNotification, _NMSyncDefaultsPinningSelectionsDidChangeNotification,
+                          _NMSyncDefaultsPinningSettingsDidChangeNotification,
+                          _NMSyncDefaultsRecommendationLibraryContentsDidChangeNotification,
+                          _NMSyncDefaultsRecommendationSelectionsDidChangeNotification,
+                          _NMSyncDefaultsRecommendationStoreContentsDidChangeNotification,
+                          _NMSyncDefaultsSyncSettingsDidChangeNotification, _NMSyncPreferencesDidChangeLocallyNotification,
+                          _NMSyncPreferencesDidChangeRemotelyNotification ]
+    objc-classes:       [ _NMSMediaContainer, _NMSMediaContainerList, _NMSMediaContainerQuotaData, _NMSMediaPinningManager,
+                          _NMSMediaSettingsSynchronizer, _NMSMediaSyncInfo, _NMSMediaSyncInfoUpdater,
+                          _NMSModelRecommendationsLibraryRequest, _NMSModelRecommendationsStoreRequest, _NMSMusicRecommendation,
+                          _NMSMusicRecommendationManager, _NMSMutableMediaSyncInfo, _NMSRecommendationArtworkDataSource,
+                          _NMSStoreModelLookupRequest, _NMSSubscriptionManager, _NMSSyncManager, _NMSSyncProgressInfo,
+                          _NMSyncDefaults ]
+...

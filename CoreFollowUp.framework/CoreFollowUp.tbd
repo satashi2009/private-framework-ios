@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CoreFollowUpVersionNumber, _CoreFollowUpVersionString, _FLDaemonExportedInterface, _FLError,
+                          _FLErrorDomain, _FLFollowUpActionLaunchArgumentsKey, _FLFollowUpItemsKey,
+                          _FLFollowUpPreferencesIdentifierPrefix, _FLFollowUpPreferencesUrlPrefix, _FLGroupIdentifierAccount,
+                          _FLGroupIdentifierDevice, _FLGroupIdentifierUnknown, _FLHSA2ActionChangePassword,
+                          _FLInternalItemWhitelistWarning, _FLLoc, _FLLocDeviceSpecific, _FLNotificationOptionForce,
+                          _FLNotificationOptionLockscreen, _FLNotificationOptionNotificationCenter,
+                          _FLNotificationOptionSpringboardAlert, __FLLocKeyFromDeviceClass, __FLLogSystem, __FLLogSystemQuery ]
+    objc-classes:       [ _FLApprovedItemsDecorator, _FLApprovedItemsFilter, _FLConstants, _FLDaemon, _FLEnvironment,
+                          _FLFollowUpAction, _FLFollowUpController, _FLFollowUpItem, _FLFollowUpNotification,
+                          _FLHSA2LoginNotification, _FLHSA2PasswordResetNotification, _FLTelemetryAggregateController,
+                          _FLTelemetryFactory, _FLTelemetryProcessor, _FLUtilities ]
+...

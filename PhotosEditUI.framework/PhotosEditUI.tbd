@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/PhotosEditUI.framework/PhotosEditUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _PUAspectHeightForWidth, _PUAspectWidthForHeight, _PUAutoWhiteBalanceFaceIKey,
+                          _PUAutoWhiteBalanceFaceQKey, _PUAutoWhiteBalanceFaceStrengthKey, _PUAutoWhiteBalanceFaceWarmthKey,
+                          _PUCropHandleIsBottom, _PUCropHandleIsCorner, _PUCropHandleIsLateral, _PUCropHandleIsLeft,
+                          _PUCropHandleIsRight, _PUCropHandleIsTop, _PUCropHandleOpposite, _PUCropHandlesAdjacent,
+                          _PUEditPluginDefaultJPEGCompressionQuality, _PUEditPluginManagerPluginsDidChangeNotification,
+                          _PUJPEGCompressionQuality, _PULivePhotoPrimaryViewStretchableWidth, _PUPhotoEditLibraryChangeTimeout,
+                          _PUPhotoEditSaveCompletionTimeout, _PUPhotoEditSaveProgressMonitorRate,
+                          _PUPhotoEditTaskDidFinishNotification, _PUPhotoEditTaskRequestKey, _PURectForSizeThatFitsRect,
+                          _PURectScaledWithFactor, _PUSliderCellReuseID, _PUToggleOriginalMoveTolerance,
+                          __PURedEyeIndicatorDelay, __PURedEyeSearchDistance, __PURedEyeTouchDiameter,
+                          __PUVideoEditScrubberHandleFromUIMovieScrubberEditingHandle ]
+    objc-classes:       [ _PUAdjustmentsMode, _PUAdjustmentsModeBadge, _PUAdjustmentsModeBar, _PUAdjustmentsModePickerCell,
+                          _PUAdjustmentsModeSliderCell, _PUAdjustmentsToolController, _PUAdjustmentsToolControllerSpec,
+                          _PUAdjustmentsToolControllerView, _PUAutoAdjustmentController, _PUCompactAdjustmentsModeBar,
+                          _PUCropAndStraightenView, _PUCropAspect, _PUCropHandleView, _PUCropMaskView, _PUCropOverlayView,
+                          _PUCropToolController, _PUCropToolControllerSpec, _PUEditAdjustmentRequest, _PUEditHelper,
+                          _PUEditPlugin, _PUEditPluginActivity, _PUEditPluginHostViewController, _PUEditPluginManager,
+                          _PUEditPluginSession, _PUEditViewController, _PUEditableMediaProviderAdjustmentDataNode,
+                          _PUEditableMediaProviderImageDataNode, _PUEditableMediaProviderVideoAssetNode,
+                          _PUEditableMediaProviderVideoURLNode, _PUFiltersToolController, _PUFiltersToolControllerSpec,
+                          _PUImageDataRenderNode, _PUImageEditPluginSession, _PUPhotoEditBaseMediaNode,
+                          _PUPhotoEditEffectCell, _PUPhotoEditImageValues, _PUPhotoEditIrisModel, _PUPhotoEditIrisModelChange,
+                          _PUPhotoEditLayoutSupport, _PUPhotoEditLevelSlider, _PUPhotoEditLivePhotoToolbar,
+                          _PUPhotoEditOverlayBadge, _PUPhotoEditPrecisionLevelContentView, _PUPhotoEditPrecisionLevelSlider,
+                          _PUPhotoEditResourceLoadRequest, _PUPhotoEditResourceLoadResult, _PUPhotoEditResourceLoader,
+                          _PUPhotoEditSaveRequest, _PUPhotoEditSnapStripView, _PUPhotoEditSnapStripViewIndicatorInfo,
+                          _PUPhotoEditSnapshot, _PUPhotoEditSnapshotFinishingNode, _PUPhotoEditTaskManager,
+                          _PUPhotoEditToolController, _PUPhotoEditToolControllerSpec, _PUPhotoEditToolControllerView,
+                          _PUPhotoEditToolbar, _PUPhotoEditValuesCalculator, _PUPhotoEditViewController,
+                          _PUPhotoEditViewControllerSpec, _PUPhotoEditVisualLevelSlider, _PUPhotoEditVisualLevelSliderCell,
+                          _PUPhotoFilterThumbnailRenderer, _PUPhotoKitAdjustmentDataNode, _PUPhotoKitAdjustmentSaveNode,
+                          _PUPhotoKitImageDataNode, _PUPhotoKitPhotoEditMediaDestination, _PUPhotoKitVideoAssetNode,
+                          _PUPhotoKitVideoURLNode, _PURedEyeIndicatorView, _PURedeyeToolController,
+                          _PURedeyeToolControllerSpec, _PURegularAdjustmentsModeBar, _PUReviewAdjustmentURLNode,
+                          _PUReviewCreateAssetNode, _PUReviewInternalSaveNode, _PUSaveReviewAssetRequest,
+                          _PUSlidersCollectionView, _PUSlidersCollectionViewLayout, _PUStripViewInternal, _PUTiltWheel,
+                          _PUTiltWheelControl, _PUTiltWheelTriangleView, _PUVideoEditMaker, _PUVideoEditMakerOptions,
+                          _PUVideoEditModel, _PUVideoEditModelChange, _PUVideoEditPluginDataSource, _PUVideoEditPluginSession,
+                          _PUVideoEditRenderer, _PUVideoEditScrubberController, _PUVideoEditScrubberImageSource,
+                          _PUVideoEditViewController, _PUVideoEditViewControllerSpec, _PUVideoEditViewControllerSpecChange,
+                          _PUVideoExportNode, __PPTState, __PUAdjustmentsLoadResult,
+                          __PUEditPluginApplicationExtensionActivity, __PUPhotoEditSnapshot, __PUScrubberContainerView,
+                          __PUSliderPlayheadBaseView ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/SearchAds.framework/SearchAds
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _ADTransparencyViewControllerErrorDomain, _SearchAdsVersionNumber, _SearchAdsVersionString ]
+    objc-classes:       [ _ADCapData, _ADFrequencyCap, _ADLocationManager, _ADSearchAdsSettings, _ADSearchObject,
+                          _ADSearchSession, _ADTargetingData, _ADTransparencyViewController ]
+...

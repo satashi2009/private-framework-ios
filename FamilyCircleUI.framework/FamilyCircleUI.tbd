@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _FACircleEventTypeAcceptInvitation, _FACircleEventTypeAddChildAccount,
+                          _FACircleEventTypeAddFamilyMember, _FACircleEventTypeFamilySettings,
+                          _FACircleEventTypeGetFamilyInvitationsUI, _FACircleEventTypeInitiate,
+                          _FACircleEventTypeInviteViaMessages, _FACircleEventTypeManageCircle, _FAClientAppContextHeaderKey,
+                          _FAFamilyDetailsCacheDidChangeNotification, _FARemoteServiceIdentifier,
+                          _FARemoteServiceUserInfoContextData, _FAServerInfoHeaderKey, _FASharedServicesSpecifierId,
+                          _FASharedServicesSpecifierIdentifierKey, _FASharedServicesSpecifiersActionURLKey,
+                          _FAURLKeyAcceptFamilyInviteV2, _FAURLKeyAddChildAccountV2, _FAURLKeyAddFamilyMemberUIV2,
+                          _FAURLKeyAddFamilyMemberV2, _FAURLKeyFamilyInviteSentV2, _FAURLKeyFamilyMemberDetailsUIV2URL,
+                          _FAURLKeyFetchFamilyInviteV2, _FAURLKeyGetFamilyInvitationsUI, _FAURLKeyInitiateFamilyV2,
+                          _FAURLKeyInviteViaMessages, _FAURLKeyStartFamilyInviteV2, _FamilyCircleUIVersionNumber,
+                          _FamilyCircleUIVersionString ]
+    objc-classes:       [ _FAAcceptChildTransferRequest, _FAAcceptFamilyInviteRequest, _FAAddFamilyMemberViewController,
+                          _FAAddPhotoView, _FABuyStorageHook, _FAChildAccountCreationController, _FAChildTransferInviteView,
+                          _FACircleContext, _FACirclePresenter, _FACircleRemoteUIDelegate, _FACircleStateController,
+                          _FAConfirmIdentityViewController, _FAContactsSearchController, _FADeclineChildTransferRequest,
+                          _FADeclineFamilyInviteRequest, _FAExplainAppleIDViewController, _FAFamilyCreditCard,
+                          _FAFamilyDetailsCache, _FAFamilyInvitationAcceptanceViewController,
+                          _FAFamilyInvitationsViewController, _FAFamilyMemberDetailsPageSurrogate,
+                          _FAFamilyMemberDetailsUIRequest, _FAFamilyMemberPhotoRequest, _FAFamilyNotificationObserver,
+                          _FAFamilyPaymentCardUIRequest, _FAFamilyPaymentInfoRequest, _FAFamilyPaymentInfoResponse,
+                          _FAFamilyPickInviteeViewController, _FAFamilyRequest, _FAFamilySettingsViewController,
+                          _FAFamilySetupBuddyMLRequest, _FAFamilySetupGetStartedViewController,
+                          _FAFamilySetupOrganizerViewController, _FAFamilySetupPrompter, _FAFamilySetupViewController,
+                          _FAFamilySharingFeaturesView, _FAInviteFamilyMemberRequest, _FAInvokeMessageHook,
+                          _FALaunchServicesHook, _FALocationSharingHook, _FAMessagesInviteConfigurationController,
+                          _FAMessagesInviteContext, _FARemoteServiceViewController, _FARequestConfigurator,
+                          _FASettingsSpecifierProvider, _FASharedService, _FASharedServicesRequest, _FASharedServicesResponse,
+                          _FASharedServicesSpecifierCell, _FASharedSubscriptionSpecifierProvider, _FAStandardInviteView,
+                          _FAURLConfiguration, __FASharedServiceImage ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+flags:                 [ not_app_extension_safe ]
+install-name:          /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _AKSecondFactorCodeEntryContentViewControllerDidEnterCodeNotification, _AuthKitUIVersionNumber,
+                          _AuthKitUIVersionString ]
+    objc-classes:       [ _AKAppleIDAuthenticationInAppContext, _AKAppleIDAuthenticationInAppExtensionContext,
+                          _AKAppleIDAuthenticationPurpleBuddyContext, _AKAppleIDAuthenticationUISurrogateContext,
+                          _AKAppleIDAuthenticationWatchBuddyContext, _AKAppleIDServerUIDataHarvester,
+                          _AKBaseSignInViewController, _AKBasicLoginAlertController, _AKBasicLoginContentViewController,
+                          _AKBasicLoginContentViewControllerContainerView, _AKCodeEntryView, _AKInlineSignInViewController,
+                          _AKModalSignInViewController, _AKSecondFactorCodeEntryContentViewController,
+                          _AKTapToSignInViewController, _AKTextField ]
+...
